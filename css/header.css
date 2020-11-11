@@ -1,0 +1,45 @@
+#header {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0.5em 0.7em;
+    background-image: url("../img/header-background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-size: 2em;
+}
+
+#header a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+#header-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-links-right {
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: "Noto Emoji Nerd Font";
+}
+
+#header-links-right a {
+    margin-left: 0.5em;
+}
+
+#header-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#header-title-title,
+#header-title-description {
+    margin: 0;
+}
