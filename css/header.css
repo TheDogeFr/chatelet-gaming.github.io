@@ -31,7 +31,7 @@ body {
     padding: 0.2em 0.5em;
 
     /* Header background */
-    background-color: #202225;
+    background: var(--header-background);
 
     /* Icons */
     font-family: "Noto Emoji Nerd Font";

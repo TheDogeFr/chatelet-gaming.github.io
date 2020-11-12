@@ -7,8 +7,8 @@
 body {
 	/* Set body colors & font */
 	font-family: sans-serif;
-	background-color: #36393f;
-	color: white;
+	background: var(--main-background);
+	color: var(--main-foreground-color);
 }
 
 
@@ -19,7 +19,7 @@ h4,
 h5,
 h6 {
 	/* Titles in accent color */
-	color: #7289da;
+	color: var(--accent-color);
 }
 
 #main-title {
@@ -34,7 +34,14 @@ h6 {
 	align-items: center;
 }
 
-#main-sections > section {
+#main {
 	/* Add some gap between the content and the left & right borders of the screen */
-	max-width: 70%;
+	padding: 0 20%;
+}
+
+@media (max-width: 900px) {
+	#main {
+		/* Add some gap between the content and the left & right borders of the screen */
+		padding: 0 5%;
+	}
 }
