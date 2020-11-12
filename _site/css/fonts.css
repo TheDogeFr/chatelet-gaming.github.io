@@ -1,3 +1,9 @@
+/*
+*
+* This CSS imports all the used fonts in the website
+*
+*/
+
 @font-face {
     font-family: "Noto Emoji Nerd Font";
     src: url("../fonts/Noto\ Emoji\ Nerd\ Font\ Complete\ Windows\ Compatible.ttf");

@@ -1,13 +1,23 @@
+/*
+*
+* Styles for the post layout
+*
+*/
+
+
 #post-infos {
+	/* Make the author & date darker */
 	color: rgba(255, 255, 255, 0.363);
 }
 
 #main_news {
+	/* This flexbox contains (the post / Disqus) */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
 #main-sections #comments {
+	/* Make the Disqus smaller in width*/
 	min-width: 50%;
 }

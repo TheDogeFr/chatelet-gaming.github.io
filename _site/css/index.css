@@ -1,4 +1,11 @@
+/*
+*
+* Styles only for the index
+*
+*/
+
 #news-title a {
+	/* Remove the default `a` style */
 	text-decoration: inherit;
 	color: inherit;
 }

@@ -1,39 +1,59 @@
+/*
+*
+* Header's style
+*
+*/
+
 body {
+    /* This flexbox contains (header / main) */
     display: flex;
     flex-direction: column;
 }
 
 #header {
+    /* Make the header font bigger */
     font-size: 2em;
 }
 
 #header a {
+    /* Remove the default `a` style */
     text-decoration: inherit;
     color: inherit;
 }
 
 #header-links {
+    /* This flexbox contains (links at the left / links at the right) */
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    /* Padding between the links and the border of the screen */
     padding: 0.2em 0.5em;
+
+    /* Header background */
     background-color: #202225;
+
+    /* Icons */
     font-family: "Noto Emoji Nerd Font";
 }
 
 #header-links-left {
+    /* This flexbox contains the links at the left */
     display: flex;
     flex-direction: row;
 }
 
 #header-links-left a {
+    /* Make the links at the left espaced */
     margin-right: 0.5em;
 }
 
 #header-links-right {
+    /* This flexbox contains the link at the right */
     display: flex;
     flex-direction: row-reverse;
 }
 #header-links-right a {
+    /* Makes the links at the right espaced */
     margin-left: 0.5em;
 }

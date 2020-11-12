@@ -1,8 +1,16 @@
+/*
+*
+* General style of the website, everything that is on every page (colors, default template...)
+*
+*/
+
 body {
+	/* Set body colors & font */
 	font-family: sans-serif;
 	background-color: #36393f;
 	color: white;
 }
+
 
 h1,
 h2,
@@ -10,19 +18,23 @@ h3,
 h4,
 h5,
 h6 {
+	/* Titles in accent color */
 	color: #7289da;
 }
 
 #main-title {
+	/* "Châtelet Gaming" title on center */
 	text-align: center;
 }
 
 #main-sections {
+	/* This flexbox contains all the sections in the main */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
 #main-sections > section {
+	/* Add some gap between the content and the left & right borders of the screen */
 	max-width: 70%;
 }
