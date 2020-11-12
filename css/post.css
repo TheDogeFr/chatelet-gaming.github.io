@@ -7,3 +7,7 @@
 	flex-direction: column;
 	justify-content: center;
 }
+
+#main-sections #comments {
+	min-width: 50%;
+}
