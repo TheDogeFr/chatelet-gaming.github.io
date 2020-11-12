@@ -22,6 +22,11 @@ h6 {
 	color: var(--accent-color);
 }
 
+.remove-a-style {
+	color: inherit;
+	text-decoration: inherit;
+}
+
 #main-title {
 	/* "Châtelet Gaming" title on center */
 	text-align: center;
