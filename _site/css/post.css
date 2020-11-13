@@ -4,20 +4,27 @@
 *
 */
 
+#main {
+	/* Flexbox that contains (navbar / post content) */
+	display: flex;
+	flex-direction: row;
+}
 
-#post-infos {
+#main-navbar {
+	/* Navbar background */
+	background-color: #2f3136;
+
+	padding: 0 1%;
+}
+
+#main-article {
+	padding: 0 10%;
+}
+
+#main-article-infos {
 	/* Make the author & date darker */
 	color: rgba(255, 255, 255, 0.363);
-}
 
-#main_news {
-	/* This flexbox contains (the post / Disqus) */
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-#main-sections #comments {
-	/* Make the Disqus smaller in width*/
-	min-width: 50%;
+	/* Margin under post infos */
+	margin-bottom: 0.5em;
 }

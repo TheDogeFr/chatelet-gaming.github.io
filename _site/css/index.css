@@ -9,3 +9,53 @@
 	text-decoration: inherit;
 	color: inherit;
 }
+
+#news {
+	/* Make the news look like a block */
+	background-color: var(--main-background-alt);
+	padding: 0.1em 1em;
+	box-shadow: 2px 2px 5px rgb(43, 43, 43);
+
+	/* Space between news */
+	margin-bottom: 1em;
+}
+
+#header-title {
+	/* Make it take the screen space */
+	flex-grow: 1;
+
+	/* Flexbox which contains the main title to center it */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#main-title {
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-image: url("/img/header-background.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#main-title-title {
+	/* Put the main title on the middle */
+	text-align: center;
+
+	/* Make it look like a button because Nicolas wants it */
+	padding: 0.2em;
+	background-color: var(--header-background);
+	border-radius: 10px;
+
+	/* Font */
+	font-family: "Glitch Inside";
+	font-size: 3em;
+}
+
+#main {
+	margin: 0;
+}

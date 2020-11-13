@@ -20,6 +20,14 @@ h5,
 h6 {
 	/* Titles in accent color */
 	color: var(--accent-color);
+
+	/* Make them closer to the paragraphs */
+	margin-bottom: 0.2em;
+}
+
+p {
+	/* Make them closer to the titles */
+	margin-top: 0;
 }
 
 .remove-a-style {
@@ -37,16 +45,4 @@ h6 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-}
-
-#main {
-	/* Add some gap between the content and the left & right borders of the screen */
-	padding: 0 20%;
-}
-
-@media (max-width: 900px) {
-	#main {
-		/* Add some gap between the content and the left & right borders of the screen */
-		padding: 0 5%;
-	}
 }

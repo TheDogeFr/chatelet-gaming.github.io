@@ -1,19 +1,23 @@
 ---
-title: Accueil
 layout: default
+title: Accueil
 ---
 
 <link rel="stylesheet" href="/css/index.css">
 
-<section id="main-news">
-	<h1>Nouveautés</h1>
-	{% for post in site.posts %}
-		<a href="{{ post.url }}" class="remove-a-style">
-			<article id="news">
-				<h2 id="news-title">{{ post.title }}</h2>
-				{{ post.excerpt }}
-			</article>
-		</a>
-		
-	{% endfor %}
+<section id="main-title">
+	<h1 id="main-title-title">Chatelet Gaming</h1>
+</section>
+<section id="main-sections">
+	<section id="main-sections-news">
+		<h1>Nouveautés</h1>
+		{% for post in site.posts %}
+			<a href="{{ post.url }}" class="remove-a-style">
+				<article id="news">
+					<h2 id="news-title">{{ post.title }}</h2>
+					{{ post.excerpt }}
+				</article>
+			</a>
+		{% endfor %}
+	</section>
 </section>

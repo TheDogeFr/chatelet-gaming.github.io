@@ -5,9 +5,7 @@
 */
 
 body {
-    /* This flexbox contains (header / main) */
-    display: flex;
-    flex-direction: column;
+    margin-top: 50px;
 }
 
 #header {
@@ -21,14 +19,18 @@ body {
     color: inherit;
 }
 
-#header-links {
+#header {
     /* This flexbox contains (links at the left / links at the right) */
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    /* Padding between the links and the border of the screen */
-    padding: 0.2em 0.5em;
+    /* Header position & size */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
 
     /* Header background */
     background: var(--header-background);
@@ -37,23 +39,10 @@ body {
     font-family: "Noto Emoji Nerd Font";
 }
 
-#header-links-left {
-    /* This flexbox contains the links at the left */
-    display: flex;
-    flex-direction: row;
+#header a {
+    margin: 0 0.2em;
 }
 
-#header-links-left a {
-    /* Make the links at the left espaced */
-    margin-right: 0.5em;
-}
-
-#header-links-right {
-    /* This flexbox contains the link at the right */
-    display: flex;
-    flex-direction: row-reverse;
-}
-#header-links-right a {
-    /* Makes the links at the right espaced */
-    margin-left: 0.5em;
+#header-links-separator {
+    flex-grow: 1;
 }
